@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VoidWeb | Contact</title>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome CDN -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  referrerpolicy="no-referrer"
+/>    
+
+  <style>
+    /* CONTACT PAGE */
+    .contact-page {
+      text-align: center;
+    }
+
+    .contact-text {
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+    }
+        
+    
+    /* ICON BUTTONS */
+    .contact-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      text-decoration: none;
+      font-size: 1.4rem;
+      transition: .3s ease;
+      border: 1px solid rgba(255,255,255,.15);
+    }
+
+    /* Instagram */
+    .contact-icon.instagram{
+      background: linear-gradient(
+        135deg,
+        #833ab4,
+        #fd1d1d,
+        #fcb045
+      );
+      color: #fff;
+      font-size: 1.8rem;
+    }
+
+    .contact-icon.instagram:hover {
+      transform: translateY(-4px);
+    }
+
+    /* Email */
+    .contact-icon.email {
+      background: rgba(255,255,255,.05);
+      color: var(--text);
+    }
+
+    .contact-icon.email:hover {
+      background: rgba(255,255,255,.12);
+      transform: translateY(-4px);
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">VoidWeb</div>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <div class="nav-links" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="works.html">Works</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+<section class="page narrow contact-page">
+  <h2 class="page-title">Contact</h2>
+
+  <p class="contact-text">
+    If you like my work and want a similar website, feel free to reach out.
+  </p>
+
+  <div class="contact-links">
+
+    <!-- Instagram -->
+    <a
+      href="https://www.instagram.com/void__web?igsh=enduM2RvNjZpZW1i"
+      target="_blank"
+      class="contact-icon instagram"
+      aria-label="Instagram"
+    >
+      <i class="fa-brands fa-instagram ig"></i>
+    </a>
+
+    <!-- Email -->
+    <a
+      href="mailto:voidweb69@gmail.com"
+      class="contact-icon email"
+      aria-label="Email"
+    >
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+
+  </div>
+</section>
+
+<footer>© VoidWeb</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
